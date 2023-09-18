@@ -53,3 +53,41 @@ I have tried to include only the packages thought absolutely necessary, so here 
 ## License
  
 This boilerplate, much like the Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+Laravel Template API
+About
+This is a RESTful API template with Laravel. A good number of elements are configured and put in place to facilitate development instead of starting from scratch, Using JWT Authenticator
+
+Installation
+After cloning the project, you must use the package manager Composer to install all dependencies.
+
+Cloning project
+git clone https://github.com/bolenge/laravel-template-api.git
+Installation dependencies
+composer install
+Initialization
+Rename file .env.example to .env
+Update database and other informations
+Generate app key (If you don't have APP_KEY value in .env)
+php artisan key:generate
+JWT token
+php artisan jwt:secret
+Run Migrations
+php artisan migrate
+Generate Storage link
+php artisan storage:link
+Initialize seeds
+php artisan db:seed
+Run tests
+php artisan test
+Start server
+php artisan serve
+Api Documentation
+e.g : localhost:8000/api/docs
+App Home Page
+e.g : localhost:8000
+Contributing
+@bolenge
+License
+MIT license.
+
